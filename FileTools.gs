@@ -40,9 +40,9 @@ var FileTools = class FileTools {
 
       // Check sheet name
       var spreadsheet = SpreadsheetApp.openByUrl(spreadsheetUrl);
-      var activeSheet = spreadsheet.getSheets();
+      var activeSheetList = spreadsheet.getSheets();
 
-      if (activeSheet.every(sheet => sheet.getName() != sheetName)) {
+      if (activeSheetList.every(sheet => sheet.getName() != sheetName)) {
         // Create a new sheet (For a new day)
         spreadsheet.insertSheet(sheetName);
 

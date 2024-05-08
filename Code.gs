@@ -1,4 +1,4 @@
-/**------------------------------------------- Function is runed when get HTTP GET request -------------------------------------------**/
+/**------------------------------------------ Function is runed when HTTP GET request occur ------------------------------------------**/
 function doGet(e) {
   var message;
   var date = new Date();
