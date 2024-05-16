@@ -21,7 +21,7 @@ var FileTools = class FileTools {
   createSpreadsheetNSheet(folderIdToSave) {
     var spreadsheetUrl;
 
-    // Spreadsheet name is depend on month
+    // Spreadsheet name depend on month
     var spreadsheetName = timeTools.getNameOf(new Date().getMonth(), "month");
     // Add spreadsheet name to global variable
     variableHolder.addBuffer(spreadsheetName);
